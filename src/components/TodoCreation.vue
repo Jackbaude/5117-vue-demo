@@ -41,7 +41,6 @@ const newTodo = ref({
 });
 
 const createTodo = () => {
-  
   if (newTodo.value.title && newTodo.value.description && newTodo.value.due_date) {
     emit("add-todo", {
       id: id.value++,
